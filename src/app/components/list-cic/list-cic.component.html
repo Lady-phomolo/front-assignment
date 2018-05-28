@@ -1,0 +1,26 @@
+<div class="container">
+<table class="table table-striped"> 
+  <thead>
+    <th>Id</th>
+    <th>Cic Type</th>
+    <th>body</th>
+    <th>subject</th>
+    <th>Source System</th>
+    <th>operations</th>
+  </thead>
+<tbody>
+  <tr *ngFor="let list of cicList">
+<td>{{list.cicId}}</td>
+<td>{{list.cicType}}</td>
+<td>{{list.body}}</td>
+<td>{{list.subject}}</td>
+<td>{{list.sourceSystem}}</td>
+<td> 
+  <button class="btn btn-primary" (click)="updateCic(list)">Edit</button>
+</td>
+
+  </tr>
+</tbody>
+</table>
+<button class="btn btn-primary" (click)="newCic()">New User</button>
+<div>

@@ -1,0 +1,26 @@
+<div class="container">
+
+  <form (ngSubmit) = "processForm()">
+    <div class="form group">
+      <input type="text" name="cicId" class="form-control" [(ngModel)]="cList.cicId">
+    </div>
+    <div class="form group">
+      <label for="cicType">Cic Type</label>
+      <input type="text" name="cicType" class="form-control" [(ngModel)]="cList.cicType">
+    </div>
+    <div class="form group">
+      <label for="subject">Subject</label>
+      <input type="text" name="subject" class="form-control" [(ngModel)]="cList.subject">
+    </div>
+    <div class="form group">
+      <label for="body">Body</label>
+      <input type="text" name="body" class="form-control" [(ngModel)]="cList.body">
+    </div>
+    <div class="form group">
+      <label for="sourceSystem">Source System</label>
+      <input type="text" name="sourceSystem" class="form-control" [(ngModel)]="cList.sourceSystem">
+    </div>
+  <br>
+    <input type="Submit" value="save" class="btn btn-success">
+  </form>
+</div>
